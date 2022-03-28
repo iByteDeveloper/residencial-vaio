@@ -1,23 +1,4 @@
 const $PAGE_DASHBOARD = `
-    <!-- topbar -->
-    <div class="topbar">
-        <div class="toggle">
-            <ion-icon name="menu"></ion-icon>
-        </div>
-
-        <!-- search -->
-        <!-- <div class="search">
-            <label>
-                <input type="text" placeholder="Buscar aquí">
-                <ion-icon name="search"></ion-icon>
-            </label>
-        </div> -->
-
-        <!-- user -->
-        <div class="user">
-            <img src="./images/general/user.png" alt="">
-        </div>
-    </div>
 
     <!-- cards -->
     <div class="card__box">
