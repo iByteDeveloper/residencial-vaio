@@ -1,7 +1,7 @@
 const $toggle = document.querySelector('.toggle');
 const $topmain = document.querySelector('.topmain');
 const $main = document.querySelector('.main');
-const $navigation = document.querySelector('.navigation');
+const $navigation = document.querySelector('.navigation__custom');
 const $modal__loader = document.querySelector('.modal__loader');
 
 const $modal = document.querySelector('.modal');

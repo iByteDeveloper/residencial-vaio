@@ -30,13 +30,13 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.container__custom {
     position: relative;
     width: 100%;
 
 }
 
-.navigation {
+.navigation__custom {
     position: fixed;
     width: 300px;
     height: 100%;
@@ -46,18 +46,19 @@ body {
     overflow: hidden;
 }
 
-.navigation.active {
+.navigation__custom.active {
     width: 80px;
 }
 
-.navigation ul {
+.navigation__custom ul {
     position: absolute;
     top: 0;
     left: 0;
+    padding-left: 0;
     width: 100%;
 }
 
-.navigation ul li {
+.navigation__custom ul li {
     position: relative;
     width: 100%;
     list-style: none;
@@ -65,17 +66,17 @@ body {
     border-bottom-left-radius: 30px;
 }
 
-.navigation ul li:hover,
-.navigation ul li.hovered {
+.navigation__custom ul li:hover,
+.navigation__custom ul li.hovered {
     background-color: var(--white);
 }
 
-.navigation ul li:nth-child(1) {
+.navigation__custom ul li:nth-child(1) {
     margin-bottom: 40px;
     pointer-events: none;
 }
 
-.navigation ul li a {
+.navigation__custom ul li a {
     position: relative;
     display: block;
     width: 100%;
@@ -84,12 +85,12 @@ body {
     color: var(--white);
 }
 
-.navigation ul li:hover a,
-.navigation ul li.hovered a {
+.navigation__custom ul li:hover a,
+.navigation__custom ul li.hovered a {
     color: var(--blue);
 }
 
-.navigation ul li a .icon {
+.navigation__custom ul li a .icon {
     position: relative;
     display: block;
     min-width: 60px;
@@ -98,11 +99,11 @@ body {
     text-align: center;
 }
 
-.navigation ul li a .icon ion-icon {
+.navigation__custom ul li a .icon ion-icon {
     font-size: 1.75em;
 }
 
-.navigation ul li a .title {
+.navigation__custom ul li a .title {
     position: relative;
     display: block;
     padding: 0 10px;
@@ -113,8 +114,8 @@ body {
 }
 
 /* Curve outside */
-.navigation ul li:hover a::before,
-.navigation ul li.hovered a::before {
+.navigation__custom ul li:hover a::before,
+.navigation__custom ul li.hovered a::before {
     content: '';
     position: absolute;
     right: 0;
@@ -127,8 +128,8 @@ body {
     pointer-events: none;
 }
 
-.navigation ul li:hover a::after,
-.navigation ul li.hovered a::after {
+.navigation__custom ul li:hover a::after,
+.navigation__custom ul li.hovered a::after {
     content: '';
     position: absolute;
     right: 0;
@@ -253,9 +254,13 @@ body {
     position: relative;
     width: 100%;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .card__box .card {
@@ -267,6 +272,7 @@ body {
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    min-width: 300px;
 }
 
 
@@ -304,16 +310,23 @@ body {
     position: relative;
     width: 100%;
     padding: 20px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 2.5fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 30px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .detail .rent__expiration {
     position: relative;
     width: 100%;
+    max-width: 49%;
     display: grid;
     min-height: 500px;
+    min-width: 540px;
     background-color: var(--white);
     padding: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
@@ -592,4 +605,20 @@ input[type="text"]:focus-visible {
 
 select:focus-visible {
     outline: 1px solid var(--blue);
+}
+
+@media (max-width: 875px) {
+    .toggle{
+        pointer-events: none;
+        /* display: none; */
+    }
+    .topmain, .main{
+        width: calc(100% - 80px);
+    }
+    .main{
+        left: 80px;
+    }
+    .navigation__custom{
+        width: 80px;
+    }
 }

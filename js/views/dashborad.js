@@ -113,8 +113,78 @@ const $PAGE_DASHBOARD = `
             </table>
         </div>
 
+
+        <div class="rent__expiration">
+            <div class="card__header">
+                <h2>Vencimiento de servicios</h2>
+                <a href="#" class="btn">Ver todos</a>
+            </div>
+            <table class="table-responsive">
+                <thead>
+                    <tr>
+                        <td>Código</td>
+                        <td>Nombre</td>
+                        <td>Precio</td>
+                        <td>Fecha Venc.</td>
+                        <td>Estado</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>L1</td>
+                        <td>Jessica Cohaila</td>
+                        <td>S/ 0.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>L2</td>
+                        <td>Leonardo Yshiy Requena</td>
+                        <td>S/ 500.00</td>
+                        <td>25/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>2B</td>
+                        <td>Ivette Bejerano Baeza</td>
+                        <td>S/ 550.00</td>
+                        <td>31/12/2021</td>
+                        <td><span class="status vencido">Vencido</span></td>
+                    </tr>
+                    <tr>
+                        <td>3A</td>
+                        <td>-</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status pendiente">Pendiente</span></td>
+                    </tr>
+                    <tr>
+                        <td>3B</td>
+                        <td>César Martínez Saavedra</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>3C</td>
+                        <td>Julio Díaz Toribio</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>3D</td>
+                        <td>Gabriel Yañez Henriquez</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <!-- Inquilinos -->
-        <div class="recent__inquilino">
+        <!--<div class="recent__inquilino">
             <div class="card__header">
                 <h2>Todos los inquilinos</h2>
             </div>
@@ -175,7 +245,7 @@ const $PAGE_DASHBOARD = `
                     </td>
                 </tr>
             </table>
-        </div>
+        </div>-->
     </div>
 
 `

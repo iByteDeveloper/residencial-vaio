@@ -22,6 +22,94 @@ const $PAGE_INQUILINO = `
                 </div>
             </div>
         </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div class="rent__expiration">
+            <div class="card__header">
+                <h2>Vencimiento de servicios</h2>
+                <a href="#" class="btn">Ver todos</a>
+            </div>
+            <table class="table-responsive">
+                <thead>
+                    <tr>
+                        <td>N°</td>
+                        <td>Tipo documento</td>
+                        <td>N° documento</td>
+                        <td>Apellidos y Nombres</td>
+                        <td>Correo electrónico</td>
+                        <td>Nro de celular</td>
+                        <td>Herramientas</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>L1</td>
+                        <td>Jessica Cohaila</td>
+                        <td>S/ 0.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>L2</td>
+                        <td>Leonardo Yshiy Requena</td>
+                        <td>S/ 500.00</td>
+                        <td>25/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>2B</td>
+                        <td>Ivette Bejerano Baeza</td>
+                        <td>S/ 550.00</td>
+                        <td>31/12/2021</td>
+                        <td><span class="status vencido">Vencido</span></td>
+                    </tr>
+                    <tr>
+                        <td>3A</td>
+                        <td>-</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status pendiente">Pendiente</span></td>
+                    </tr>
+                    <tr>
+                        <td>3B</td>
+                        <td>César Martínez Saavedra</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>3C</td>
+                        <td>Julio Díaz Toribio</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                    <tr>
+                        <td>3D</td>
+                        <td>Gabriel Yañez Henriquez</td>
+                        <td>S/ 250.00</td>
+                        <td>31/01/2022</td>
+                        <td><span class="status emitido">Emitido</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 `
 

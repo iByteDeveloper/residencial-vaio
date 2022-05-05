@@ -1,0 +1,103 @@
+
+.rent__expiration {
+    position: relative;
+    width: 100%;
+    max-width: 49%;
+    display: grid;
+    min-height: 500px;
+    min-width: 540px;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+}
+
+.rent__expiration .card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+
+.rent__expiration .card__header h2 {
+    font-weight: 600;
+    color: var(--blue);
+
+}
+
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background-color: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+
+table thead td {
+    font-weight: 600;
+}
+
+.rent__expiration table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.rent__expiration table tr:last-child {
+    border-bottom: none;
+}
+
+.rent__expiration table tbody tr:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.rent__expiration table tr td {
+    padding: 10px;
+}
+
+
+.rent__expiration table tr td:last-child {
+    text-align: end;
+}
+
+.rent__expiration table tr td:nth-child(3) {
+    text-align: end;
+}
+
+.rent__expiration table tr td:nth-child(4) {
+    text-align: center;
+}
+
+.rent__expiration table .status {
+    padding: 2px 4px;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rent__expiration table .status.emitido {
+    background-color: #8de02c;
+}
+
+.rent__expiration table .status.vencido {
+    background-color: #f00;
+}
+
+.rent__expiration table .status.limite {
+    background-color: #f9ca3f;
+}
+
+.rent__expiration table .status.pendiente {
+    background-color: #1795ce;
+}
