@@ -1,6 +1,6 @@
 const $app = document.querySelector('#app');
 
-function router(_route) {
+async function router(_route) {
     let htmlPage = '';
     console.log(`Ruta detectada: ${_route}`)
     switch (_route) {
@@ -14,6 +14,10 @@ function router(_route) {
 
         case '#/Inquilinos':
             htmlPage = $PAGE_INQUILINO;
+            getPersona();
+            setTimeout(() => {
+                setFiltroInquilino();
+            }, 500);
             break;
     }
 

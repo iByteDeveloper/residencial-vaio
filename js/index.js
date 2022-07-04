@@ -1,3 +1,4 @@
+const $VAL = 0;
 const $toggle = document.querySelector('.toggle');
 const $topmain = document.querySelector('.topmain');
 const $main = document.querySelector('.main');
@@ -19,6 +20,18 @@ $toggle.addEventListener('click', () => {
     $main.classList.toggle('active');
 })
 
+function switchModal(_sw, _height = 200, _width = 60, _title = 'Residencial Vaio') {
+
+    clearModalContentClass();
+    if (_sw) {
+        $lblModalTitle.innerText = _title;
+        $modal__content.classList.add(`modal__content-${_height}`);
+        $modal__content.classList.add(`modal__contentWidth-${_width}perc`);
+        $modal.classList.remove('display__none');
+    }
+    else $modal.classList.add('display__none');
+}
+
 function switchLoader(_sw) {
     if (_sw) $modal__loader.classList.remove('display__none')
     else $modal__loader.classList.add('display__none')
@@ -32,9 +45,9 @@ function clearModalContentClass() {
     $modal__content.classList.remove('modal__content-600');
 
     $modal__content.classList.remove('modal__contentWidth-40perc');
+    $modal__content.classList.remove('modal__contentWidth-50perc');
     $modal__content.classList.remove('modal__contentWidth-60perc');
 }
-
 
 window.addEventListener('hashchange', () => router(window.location.hash));
 

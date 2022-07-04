@@ -1,0 +1,31 @@
+{
+    "name": "Web App de Control de Alquiler 2022",
+    "short_name": "Control de Alquiler 2022",
+    "start_url": "./?utm_source=web_app_manifest",
+    "display": "fullscreen",
+    "icons": [{
+      "src": "images/touch/residencial48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/residencial72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/residencial96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/residencial144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/residencial168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    }, {
+      "src": "images/touch/residencial192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }]
+  }
